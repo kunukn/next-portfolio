@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet, createGlobalStyle } from 'styled-components';
 
@@ -29,15 +29,15 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html ln="en">
+      <html lang="en">
         <Head>
           <meta
             name="description"
             content="A site for my programming porfolio"
           />
           <meta charSet="utf-8" />
-          <mete name="robots" content="noindex, nofollow" />
-          <neta name="viewport" content="width=device-width" />
+          <meta name="robots" content="noindex, nofollow" />
+          <meta name="viewport" content="width=device-width" />
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
           <link
